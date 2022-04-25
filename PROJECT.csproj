@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A41BF95-B876-4221-99C4-90D55F1E51BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT</RootNamespace>
+    <AssemblyName>PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AHLY_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AHLY_ADMIN.Designer.cs">
+      <DependentUpon>AHLY_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BARCELONA_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BARCELONA_ADMIN.Designer.cs">
+      <DependentUpon>BARCELONA_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAYERN_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAYERN_ADMIN.Designer.cs">
+      <DependentUpon>BAYERN_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAOCH_PARIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAOCH_PARIS.Designer.cs">
+      <DependentUpon>CAOCH_PARIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHANGEPASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHANGEPASS.Designer.cs">
+      <DependentUpon>CHANGEPASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHANGEPASS_CLUBADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHANGEPASS_CLUBADMIN.Designer.cs">
+      <DependentUpon>CHANGEPASS_CLUBADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHANGEPASS_COACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHANGEPASS_COACH.Designer.cs">
+      <DependentUpon>CHANGEPASS_COACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHANGEPASS_SUPPORTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHANGEPASS_SUPPORTER.Designer.cs">
+      <DependentUpon>CHANGEPASS_SUPPORTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLUBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLUBS.Designer.cs">
+      <DependentUpon>CLUBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COACH.Designer.cs">
+      <DependentUpon>COACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COACH_AHLY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COACH_AHLY.Designer.cs">
+      <DependentUpon>COACH_AHLY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COACH_BARCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COACH_BARCA.Designer.cs">
+      <DependentUpon>COACH_BARCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COACH_BAYERN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COACH_BAYERN.Designer.cs">
+      <DependentUpon>COACH_BAYERN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COACH_LIVER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COACH_LIVER.Designer.cs">
+      <DependentUpon>COACH_LIVER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DataFor_ClubAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFor_ClubAdmin.Designer.cs">
+      <DependentUpon>DataFor_ClubAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="insertmatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertmatch.Designer.cs">
+      <DependentUpon>insertmatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INSERTOSPONSOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INSERTOSPONSOR.Designer.cs">
+      <DependentUpon>INSERTOSPONSOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertstandings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertstandings.Designer.cs">
+      <DependentUpon>insertstandings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INSERTTRANSFER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INSERTTRANSFER.Designer.cs">
+      <DependentUpon>INSERTTRANSFER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIVER_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIVER_ADMIN.Designer.cs">
+      <DependentUpon>LIVER_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_CLUBADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_CLUBADMIN.Designer.cs">
+      <DependentUpon>LOGIN_CLUBADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_COACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_COACH.Designer.cs">
+      <DependentUpon>LOGIN_COACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_SUPPORTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_SUPPORTER.Designer.cs">
+      <DependentUpon>LOGIN_SUPPORTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PARIS_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PARIS_ADMIN.Designer.cs">
+      <DependentUpon>PARIS_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLAYERINFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLAYERINFO.Designer.cs">
+      <DependentUpon>PLAYERINFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REAL_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REAL_ADMIN.Designer.cs">
+      <DependentUpon>REAL_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCHEDULE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHEDULE.Designer.cs">
+      <DependentUpon>SCHEDULE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCLUBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCLUBS.Designer.cs">
+      <DependentUpon>SCLUBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIGN_UP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIGN_UP.Designer.cs">
+      <DependentUpon>SIGN_UP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STANDINGS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STANDINGS.Designer.cs">
+      <DependentUpon>STANDINGS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUPPORT_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUPPORT_USER.Designer.cs">
+      <DependentUpon>SUPPORT_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_TOUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_TOUR.Designer.cs">
+      <DependentUpon>S_TOUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transfer.Designer.cs">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T_ADMIN.Designer.cs">
+      <DependentUpon>T_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateplayercoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateplayercoach.Designer.cs">
+      <DependentUpon>updateplayercoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateschedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateschedule.Designer.cs">
+      <DependentUpon>updateschedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERS.Designer.cs">
+      <DependentUpon>USERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="viewTRANSFER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewTRANSFER.Designer.cs">
+      <DependentUpon>viewTRANSFER.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AHLY_ADMIN.resx">
+      <DependentUpon>AHLY_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BARCELONA_ADMIN.resx">
+      <DependentUpon>BARCELONA_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAYERN_ADMIN.resx">
+      <DependentUpon>BAYERN_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAOCH_PARIS.resx">
+      <DependentUpon>CAOCH_PARIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHANGEPASS.resx">
+      <DependentUpon>CHANGEPASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHANGEPASS_CLUBADMIN.resx">
+      <DependentUpon>CHANGEPASS_CLUBADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHANGEPASS_COACH.resx">
+      <DependentUpon>CHANGEPASS_COACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHANGEPASS_SUPPORTER.resx">
+      <DependentUpon>CHANGEPASS_SUPPORTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLUBS.resx">
+      <DependentUpon>CLUBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COACH.resx">
+      <DependentUpon>COACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COACH_AHLY.resx">
+      <DependentUpon>COACH_AHLY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COACH_BARCA.resx">
+      <DependentUpon>COACH_BARCA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COACH_BAYERN.resx">
+      <DependentUpon>COACH_BAYERN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COACH_LIVER.resx">
+      <DependentUpon>COACH_LIVER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFor_ClubAdmin.resx">
+      <DependentUpon>DataFor_ClubAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertmatch.resx">
+      <DependentUpon>insertmatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSERTOSPONSOR.resx">
+      <DependentUpon>INSERTOSPONSOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertstandings.resx">
+      <DependentUpon>insertstandings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSERTTRANSFER.resx">
+      <DependentUpon>INSERTTRANSFER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIVER_ADMIN.resx">
+      <DependentUpon>LIVER_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_CLUBADMIN.resx">
+      <DependentUpon>LOGIN_CLUBADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_COACH.resx">
+      <DependentUpon>LOGIN_COACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_SUPPORTER.resx">
+      <DependentUpon>LOGIN_SUPPORTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PARIS_ADMIN.resx">
+      <DependentUpon>PARIS_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLAYERINFO.resx">
+      <DependentUpon>PLAYERINFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REAL_ADMIN.resx">
+      <DependentUpon>REAL_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHEDULE.resx">
+      <DependentUpon>SCHEDULE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCLUBS.resx">
+      <DependentUpon>SCLUBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIGN_UP.resx">
+      <DependentUpon>SIGN_UP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STANDINGS.resx">
+      <DependentUpon>STANDINGS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUPPORT_USER.resx">
+      <DependentUpon>SUPPORT_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_TOUR.resx">
+      <DependentUpon>S_TOUR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transfer.resx">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T_ADMIN.resx">
+      <DependentUpon>T_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateplayercoach.resx">
+      <DependentUpon>updateplayercoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateschedule.resx">
+      <DependentUpon>updateschedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERS.resx">
+      <DependentUpon>USERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="viewTRANSFER.resx">
+      <DependentUpon>viewTRANSFER.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easport %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLEAGUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLEG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLEG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAPORTE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NASSER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAYERN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KHATIB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIVV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REAL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-05 at 9.41.27 PM %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-05 at 9.41.28 PM %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-05 at 10.42.57 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-05 at 10.38.05 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-05 at 9.41.28 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-05 at 9.41.27 PM %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-06 at 12.46.30 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-01-06 at 1.24.22 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
